@@ -1,0 +1,21 @@
+\begin{table}[!htbp]
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{c c c c c c c c c c c c c c}
+\toprule
+Subject & \multicolumn{4}{c}{Test on Fold 1} & \multicolumn{4}{c}{Test on Fold 2} & \multicolumn{4}{c}{Test on Fold 3} & MeanError\\
+\midrule
+ & Errors  & Precision & Recall  & f-Measure  &  Errors  & Precision & Recall & f-Measure	& Errors  & Precision & Recall & f-Measure\\
+Dog 1 &  {$d1e1}\% & {$d1p1} & {$d1r1} & {$d1f1} &  {$d1e2}\% & {$d1p2} & {$d1r2} & {$d1f2} &  {$d1e3}\% & {$d1p3} & {$d1r3} & {$d1f3} & {$d1eMean}\%\\
+Dog 2 &  {$d2e1}\% & {$d2p1} & {$d2r1} & {$d2f1} &  {$d2e2}\% & {$d2p2} & {$d2r2} & {$d2f2} &  {$d2e3}\% & {$d2p3} & {$d2r3} & {$d2f3} & {$d2eMean}\%\\
+Dog 3 &  {$d3e1}\% & {$d3p1} & {$d3r1} & {$d3f1} &  {$d3e2}\% & {$d3p2} & {$d3r2} & {$d3f2} &  {$d3e3}\% & {$d3p3} & {$d3r3} & {$d3f3} & {$d3eMean}\%\\
+Dog 4 &  {$d4e1}\% & {$d4p1} & {$d4r1} & {$d4f1} &  {$d4e2}\% & {$d4p2} & {$d4r2} & {$d4f2} &  {$d4e3}\% & {$d4p3} & {$d4r3} & {$d4f3} & {$d4eMean}\%\\
+Dog 5 &  {$d5e1}\% & {$d5p1} & {$d5r1} & {$d5f1} &  {$d5e2}\% & {$d5p2} & {$d5r2} & {$d5f2} &  {$d5e3}\% & {$d5p3} & {$d5r3} & {$d5f3} & {$d5eMean}\%\\
+Patient 1 &  {$pat1e1}\% & {$pat1p1} & {$pat1r1} & {$pat1f1} &  {$pat1e2}\% & {$pat1p2} & {$pat1r2} & {$pat1f2} &  {$pat1e3}\% & {$pat1p3} & {$pat1r3} & {$pat1f3} & {$pat1eMean}\%\\
+Patient 2 &  {$pat2e1}\% & {$pat2p1} & {$pat2r1} & {$pat2f1} &  {$pat2e2}\% & {$pat2p2} & {$pat2r2} & {$pat2f2} &  {$pat2e3}\% & {$pat2p3} & {$pat2r3} & {$pat2f3} & {$pat2eMean}\%\\
+\bottomrule
+\end{tabular}
+}
+\caption{Performance of the bonehead model.}
+\label{tab:bonehead}
+\end{table}

@@ -1,0 +1,172 @@
+Dog_1
+
+Fold Size : 3
+Number of training data points : 336
+Number of testing data points : 168
+Interictal data to Preictal data Ratio : 480 : 24
+When fold #1 is used for testing : 
+	Error = 13
+	Precision = 3.333333e-01
+	Recall = 6.250000e-01
+	F-Measure is : = 4.838710e-01
+When fold #2 is used for testing : 
+	Error = 11
+	Precision = 3.333333e-01
+	Recall = 3.750000e-01
+	F-Measure is : = 3.600000e-01
+When fold #3 is used for testing : 
+	Error = 7
+	Precision = 6.666667e-01
+	Recall = 2.500000e-01
+	F-Measure is : = 3.157895e-01
+Average Error : 10.333333
+
+subject =
+
+Dog_2
+
+Fold Size : 3
+Number of training data points : 362
+Number of testing data points : 180
+Interictal data to Preictal data Ratio : 500 : 42
+When fold #1 is used for testing : 
+	Error = 7
+	Precision = 7.692308e-01
+	Recall = 7.142857e-01
+	F-Measure is : = 7.317073e-01
+When fold #2 is used for testing : 
+	Error = 6
+	Precision = 8.333333e-01
+	Recall = 7.142857e-01
+	F-Measure is : = 7.500000e-01
+When fold #3 is used for testing : 
+	Error = 0
+	Precision = 1
+	Recall = 1
+	F-Measure is : = 1
+Average Error : 4.333333
+
+subject =
+
+Dog_3
+
+Fold Size : 3
+Number of training data points : 1008
+Number of testing data points : 504
+Interictal data to Preictal data Ratio : 1440 : 72
+When fold #1 is used for testing : 
+	Error = 19
+	Precision = 5.862069e-01
+	Recall = 7.083333e-01
+	F-Measure is : = 6.623377e-01
+When fold #2 is used for testing : 
+	Error = 21
+	Precision = 5.600000e-01
+	Recall = 5.833333e-01
+	F-Measure is : = 5.753425e-01
+When fold #3 is used for testing : 
+	Error = 22
+	Precision = 5.416667e-01
+	Recall = 5.416667e-01
+	F-Measure is : = 5.416667e-01
+Average Error : 20.666667
+
+subject =
+
+Dog_4
+
+Fold Size : 3
+Number of training data points : 601
+Number of testing data points : 300
+Interictal data to Preictal data Ratio : 804 : 97
+When fold #1 is used for testing : 
+	Error = 45
+	Precision = 3.333333e-01
+	Recall = 4.020619e-01
+	F-Measure is : = 3.762058e-01
+When fold #2 is used for testing : 
+	Error = 40
+	Precision = 3.939394e-01
+	Recall = 4.020619e-01
+	F-Measure is : = 3.993174e-01
+When fold #3 is used for testing : 
+	Error = 35
+	Precision = 4.651163e-01
+	Recall = 6.185567e-01
+	F-Measure is : = 5.572755e-01
+Average Error : 40.000000
+
+subject =
+
+Dog_5
+
+Fold Size : 3
+Number of training data points : 320
+Number of testing data points : 160
+Interictal data to Preictal data Ratio : 450 : 30
+When fold #1 is used for testing : 
+	Error = 5
+	Precision = 7.272727e-01
+	Recall = 8.000000e-01
+	F-Measure is : = 7.741935e-01
+When fold #2 is used for testing : 
+	Error = 5
+	Precision = 8.571429e-01
+	Recall = 6.000000e-01
+	F-Measure is : = 6.666667e-01
+When fold #3 is used for testing : 
+	Error = 4
+	Precision = 7.500000e-01
+	Recall = 9.000000e-01
+	F-Measure is : = 8.437500e-01
+Average Error : 4.666667
+
+subject =
+
+Patient_1
+
+Fold Size : 3
+Number of training data points : 45
+Number of testing data points : 23
+Interictal data to Preictal data Ratio : 50 : 18
+When fold #1 is used for testing : 
+	Error = 3
+	Precision = 1
+	Recall = 5.000000e-01
+	F-Measure is : = 6.000000e-01
+When fold #2 is used for testing : 
+	Error = 2
+	Precision = 8.333333e-01
+	Recall = 8.333333e-01
+	F-Measure is : = 8.333333e-01
+When fold #3 is used for testing : 
+	Error = 1
+	Precision = 8.571429e-01
+	Recall = 1
+	F-Measure is : = 9.473684e-01
+Average Error : 2.000000
+
+subject =
+
+Patient_2
+
+Fold Size : 3
+Number of training data points : 40
+Number of testing data points : 20
+Interictal data to Preictal data Ratio : 42 : 18
+When fold #1 is used for testing : 
+	Error = 8
+	Precision = 3.750000e-01
+	Recall = 5.000000e-01
+	F-Measure is : = 4.500000e-01
+When fold #2 is used for testing : 
+	Error = 9
+	Precision = 2.857143e-01
+	Recall = 3.333333e-01
+	F-Measure is : = 3.157895e-01
+When fold #3 is used for testing : 
+	Error = 7
+	Precision = 4.285714e-01
+	Recall = 5.000000e-01
+	F-Measure is : = 4.736842e-01
+Average Error : 8.000000

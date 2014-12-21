@@ -1,0 +1,53 @@
+#install.packages("R.matlab")
+library(R.matlab)
+#x <- 1:50
+#fft(x, inverse=TRUE)/length(x)
+for (k in 14:42)
+{
+  num = sprintf("%04d", k)
+  n = sprintf("%d", k)
+  fname = paste("/home/revanthb3000/Fall '14/15-781/Project/Patient_2/Patient_2_interictal_segment_",num,".mat",sep="")
+  A <- readMat(fname)
+  B <- A$interictal.segment
+  C = B[,,1]$data
+  T = B[,,1]$data.length.sec
+  c = length(B[,,1]$channels)
+  cols = length(C)/c
+  M = matrix(C, nrow = c, ncol = cols)
+  G = matrix(data=NA, nrow = c, ncol = 1000, byrow=FALSE)
+  for (j in 1:c)
+  {
+    F = fft(M[j, ], inverse=TRUE)/cols
+    for (i in 1:1000)
+    {
+      G[(j-1)*1000+i] = abs(F[1+(i-1)*T])
+    }
+  }
+  ofname = paste("/home/revanthb3000/Fall '14/15-781/Project/FourierAmps/Patient_2/Patient_2_interictal_segment_",num,".txt",sep="")
+  write.table(G, file=ofname, row.names=FALSE, col.names=FALSE)
+}
+
+for (k in 1:18)
+{
+  num = sprintf("%04d", k)
+  n = sprintf("%d", k)
+  fname = paste("/home/revanthb3000/Fall '14/15-781/Project/Patient_2/Patient_2_preictal_segment_",num,".mat",sep="")
+  A <- readMat(fname)
+  B <- A$preictal.segment
+  C = B[,,1]$data
+  T = B[,,1]$data.length.sec
+  c = length(B[,,1]$channels)
+  cols = length(C)/c
+  M = matrix(C, nrow = c, ncol = cols)
+  G = matrix(data=NA, nrow = c, ncol = 1000, byrow=FALSE)
+  for (j in 1:c)
+  {
+    F = fft(M[j, ], inverse=TRUE)/cols
+    for (i in 1:1000)
+    {
+      G[(j-1)*1000+i] = abs(F[1+(i-1)*T])
+    }
+  }
+  ofname = paste("/home/revanthb3000/Fall '14/15-781/Project/FourierAmps/Patient_2/Patient_2_preictal_segment_",num,".txt",sep="")
+  write.table(G, file=ofname, row.names=FALSE, col.names=FALSE)
+}

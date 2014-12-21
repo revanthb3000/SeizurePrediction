@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+
+\usepackage{enumerate}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{fancyhdr}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large 15-781/10-701} \\
+{\Large Project Proposal} \\
+Revanth Bhattaram\\
+Vipul Singh \\
+Archit Karandikar \\
+$1^\text{st}$ October 2014 \\
+\end{center}
+
+\begin{itemize}
+
+\item
+\textbf{Title:} American Epilepsy Society Seizure Prediction Challenge
+
+\item
+\textbf{Group Members:}
+\begin{itemize}
+\item Revanth Bhattaram (rbhattar@andrew.cmu.edu)
+\item Vipul Singh
+\item Archit Karandikar (akarandi@andrew.cmu.edu)
+\end{itemize}
+
+\item
+\textbf{Task:} Epilepsy is a neurological disorder. It is characterized by epileptic seizures. Patients of epilepsy are weary of the possibility of occurrence of seizures. This constant anxiety is despite the fact the the seizures themselves may be infrequent. This is why seizure forecasting systems can potentially help epileptic patients to lead more normal lives. In this project, we will address the challenge of forecasting seizures in epilepsy patients. \\
+\-\hspace{7pt} Electroencephalography (EEG) is the recording of the voltage fluctuations resulting from ionic current flows within the neurons of the brain. Our forecast will be based on the results of the EEG signals. \\
+\-\hspace{7pt} This task is a competition on \textit{kaggle}, an online platform for data analytics competitions. It is sponsored by the National Institutes of Health (NINDS), the Epilepsy Foundation, and the American Epilepsy Society.
+
+Reference Link : https://www.kaggle.com/c/seizure-prediction
+
+\item
+\textbf{Type of Learning:} This will be a two class classifcation problem where given an iEEG dataclip, we'll have classify it as preictal(prior to a seizure) activity or interictal(the baseline state) activity. Since we'll be working with datasets that contained labeled data (iEEG dataclips), this problem will be solved using a \textbf{supervised} learning approach.
+
+\item \textbf{Dataset:}\\
+The dataset we'll be using for this project is provided by kaggle on the challenge page. Additional annotated intracranial EEG data is freely available at the International Epilepsy Electrophysiology Portal.
+
+The dataset consists of Intracranial EEG (iEEG) data clips recorded from canine and human test subjects.
+
+\begin{itemize}
+\item \textbf{Testing Data Set :} 
+
+The training data is organized into one hour sequences of ten minute iEEG clips labeled "Preictal" for pre-seizure data segments, or "Interictal" for non-seizure data segments. 
+
+The interictal activity data, in the case of canines, is recorded at least a week before and after a seizure. For human training data, the interictal training data is recorded at least 4 hours before and after a seizure.
+
+The preictal activity data is recorded one hour prior to a seizure with a 5 minute offset.
+
+\item \textbf{Testing Data Set :} 
+
+The testing dataset consists of 10 minute iEEG clips which are provided in random order. This data is provided each of the canine and human test subjects. Our task would be to predict whether this data counts as interictal activity or preictal activity (which will be let us predict if the patient will have a seizure or not).
+
+\end{itemize}
+The dataset is provided in a \textit{coder-friendly} format. This would ensure that preprocessing (if any) isn't too much work. \\
+
+\item \textbf{Validation:}
+The contest has a provision for online submission with instant feedback. The feedback is in terms of the collective accuracy of the predictions. The results of the training data (not available to contestants) are used for evaluating submissions.
+
+In addition, it's always possible for us to be able to split the training dataset and use a part of it to test the model we build.
+
+\item \textbf{Goals of the project: }
+\begin{itemize}
+\item The first steps would be to explore the dataset, read up relevant literature and come up with a basic model for classification. This would serve as a baseline classifier.
+\item By the midway report deadline, we hope to have made significant inroads in building a classifier with a good success rate.
+\end{itemize}
+
+\end{itemize}
+
+\end{document}
+

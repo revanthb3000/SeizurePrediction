@@ -1,0 +1,88 @@
+\documentclass[11pt]{article}
+
+\usepackage{enumerate}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{fancyhdr}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large 15-781/10-701} \\
+{\Large Project Proposal} \\
+Revanth \\
+Vipul Singh \\
+Archit Karandikar \\
+$1^\text{st}$ October 2014 \\
+\end{center}
+
+\begin{itemize}
+
+\item
+\textbf{Title:} American Epilepsy Society Seizure Prediction Challenge
+
+\item
+\textbf{Group Members:}
+\begin{itemize}
+\item Revanth
+\item Vipul Singh
+\item Archit Karandikar (akarandi@andrew.cmu.edu)
+\end{itemize}
+
+\item
+\textbf{Task:} Epilepsy is a neurological disorder. It is characterized by epileptic seizures. Patients of epilepsy are weary of the possibility of occurrence of seizures. This constant anxiety is despite the fact the the seizures themselves may be infrequent. This is why seizure forecasting systems can potentially help epileptic patients to lead more normal lives. In this project, we will address the challenge of forecasting seizures in epilepsy patients. \\
+\-\hspace{7pt} Electroencephalography (EEG) is the recording of the voltage fluctuations resulting from ionic current flows within the neurons of the brain. Our forecast will be based on the results of the EEG signals. \\
+\-\hspace{7pt} This task is a competition on \textit{kaggle}, an online platform for data analytics competitions. It is sponsored by the National Institutes of Health (NINDS), the Epilepsy Foundation, and the American Epilepsy Society.
+
+Reference Link : https://www.kaggle.com/c/seizure-prediction
+
+\item
+\textbf{Type of Learning:} Supervised
+
+\item
+\textbf{Data and Validation:}
+\begin{itemize}
+\item \textbf{Training Data:} The training data set consists of intercranial EEG recordings from dogs and patients with naturally occurring epilepsy. The EEG was sampled from 16 electrodes at 400 Hz. There are several recordings for each dog - up to 100 seizures over the span of an year.
+\item \textbf{Testing Data:} The testing data is from patients with epilepsy undergoing intercranial EEG monitoring. The number of electrodes used for the recording vary. The data is sampled at 5000 Hz and is a measure of the voltage difference wrt an external electrode.
+\item \textbf{Validation:} The contest has a provision for online submission with instant feedback. The feedback is in terms of the collective accuracy of the predictions. The results of the training data (not available to contestants) are used for evaluating submissions.
+\end{itemize}
+
+\textbf{Goals of the project}
+\begin{itemize}
+\item The first steps would be to explore the dataset, read up relevant literature and come up with a basic model for classification. This would serve as a baseline classifier.
+\item 
+\end{itemize}
+
+\end{itemize}
+
+\end{document}
+

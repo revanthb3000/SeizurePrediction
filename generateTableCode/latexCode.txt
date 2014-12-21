@@ -1,0 +1,21 @@
+\begin{table}[!htbp]
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{c c c c c c c c c c c c c c}
+\toprule
+Subject & \multicolumn{4}{c}{Test on Fold 1} & \multicolumn{4}{c}{Test on Fold 2} & \multicolumn{4}{c}{Test on Fold 3} & MeanError\\
+\midrule
+ & Errors  & Precision & Recall  & f-Measure  &  Errors  & Precision & Recall & f-Measure	& Errors  & Precision & Recall & f-Measure\\
+Dog 1 &  7.74\% & 0.33 & 0.62 & 0.48 &  6.55\% & 0.33 & 0.38 & 0.36 &  4.17\% & 0.67 & 0.25 & 0.32 & 6.15\%\\
+Dog 2 &  3.89\% & 0.77 & 0.71 & 0.73 &  3.33\% & 0.83 & 0.71 & 0.75 &  0.00\% & 1.00 & 1.00 & 1.00 & 2.41\%\\
+Dog 3 &  3.77\% & 0.59 & 0.71 & 0.66 &  4.17\% & 0.56 & 0.58 & 0.58 &  4.37\% & 0.54 & 0.54 & 0.54 & 4.10\%\\
+Dog 4 &  15.00\% & 0.33 & 0.40 & 0.38 &  13.33\% & 0.39 & 0.40 & 0.40 &  11.67\% & 0.47 & 0.62 & 0.56 & 13.33\%\\
+Dog 5 &  3.12\% & 0.73 & 0.80 & 0.77 &  3.12\% & 0.86 & 0.60 & 0.67 &  2.50\% & 0.75 & 0.90 & 0.84 & 2.92\%\\
+Patient 1 &  13.04\% & 1.00 & 0.50 & 0.60 &  8.70\% & 0.83 & 0.83 & 0.83 &  4.35\% & 0.86 & 1.00 & 0.95 & 8.70\%\\
+Patient 2 &  40.00\% & 0.38 & 0.50 & 0.45 &  45.00\% & 0.29 & 0.33 & 0.32 &  35.00\% & 0.43 & 0.50 & 0.47 & 40.00\%\\
+\bottomrule
+\end{tabular}
+}
+\caption{Performance of the bonehead model.}
+\label{tab:bonehead}
+\end{table}
